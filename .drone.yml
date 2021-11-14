@@ -11,36 +11,36 @@ steps:
 - name: Start syncing && Compiling
   image: brock5555/recovery
   commands:
-  - bash build.sh
+  - sh Env.sh
 steps:
 - name: Source File Download
   image: brock5555/recovery
   commands:
-  - bash Fetch.sh
+  - sh Fetch.sh
 steps:
 - name: Unpacking Sample and Payload
   image: brock5555/recovery
   commands:
-  - bash Unpacking.sh
+  - sh Unpacking.sh
 steps:
 - name: Processing Payload
   image: brock5555/recovery
   commands:
-  - bash Payload.sh
+  - sh Payload.sh
 steps:
 - name: Processing Super.img
   image: brock5555/recovery
   commands:
-  - bash Super.sh
+  - sh Super.sh
 steps:
 - name: Packing and Uploading
   image: brock5555/recovery
   commands:
-  - bash Packing-Uploading.sh
+  - sh Packing-Uploading.sh
   
 steps:
 - name: Removing Orphans
   image: brock5555/recovery
   commands:
-  - bash Remove.sh
+  - sh Remove.sh
   - rm -R Remove.sh
