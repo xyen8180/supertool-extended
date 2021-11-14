@@ -11,7 +11,7 @@ steps:
 - name: Start syncing && Compiling
   image: brock5555/recovery
   commands:
-  - bash Env.sh
+  - bash build.sh
 steps:
 - name: Source File Download
   image: brock5555/recovery
