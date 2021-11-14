@@ -10,4 +10,4 @@ rm -R Unpacking.sh
 rm -R Payload.sh
 rm -R Super.sh
 rm -R Packing-Uploading.sh
-rm -R "$ZIPNAME"_by_XD.zip
+rm -R [BETA-CN]"$ZIPNAME"_by_XD.zip
