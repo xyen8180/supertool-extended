@@ -1,3 +1,4 @@
+ZIPNAME="$(ls ./Input | sed -e 's/\.zip$//')"
 echo " ===+++ Removing Source Files +++==="
 rm -R Binaries
 rm -R Sample

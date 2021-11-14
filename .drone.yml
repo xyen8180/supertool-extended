@@ -17,19 +17,24 @@ steps:
   commands:
   - bash Fetch.sh
 steps:
-- name: Start syncing && Compiling
+- name: Unpacking Sample and Payload
   commands:
   - bash Unpacking.sh
 steps:
-- name: Start syncing && Compiling
+- name: Processing Payload
   commands:
   - bash Payload.sh
 steps:
-- name: Start syncing && Compiling
+- name: Processing Super.img
   commands:
   - bash Super.sh
 steps:
-- name: Start syncing && Compiling
+- name: Packing and Uploading
   commands:
   - bash Packing-Uploading.sh
+  
+steps:
+- name: Removing Orphans
+  commands:
+  - bash Remove.sh
   - rm -R Remove.sh
