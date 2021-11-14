@@ -14,27 +14,33 @@ steps:
   - bash Env.sh
 steps:
 - name: Source File Download
+  image: brock5555/recovery
   commands:
   - bash Fetch.sh
 steps:
 - name: Unpacking Sample and Payload
+  image: brock5555/recovery
   commands:
   - bash Unpacking.sh
 steps:
 - name: Processing Payload
+  image: brock5555/recovery
   commands:
   - bash Payload.sh
 steps:
 - name: Processing Super.img
+  image: brock5555/recovery
   commands:
   - bash Super.sh
 steps:
 - name: Packing and Uploading
+  image: brock5555/recovery
   commands:
   - bash Packing-Uploading.sh
   
 steps:
 - name: Removing Orphans
+  image: brock5555/recovery
   commands:
   - bash Remove.sh
   - rm -R Remove.sh
