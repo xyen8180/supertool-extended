@@ -1,6 +1,7 @@
 PreFix=[BETA-CN]
 ZIPNAME="$(ls ./Input | sed -e 's/\.zip$//')"
 SAMPLE_DEST=./Output/$ZIPNAME
+sudo apt-get -y install sshpass
 echo " ===+++ Zipping Files +++==="
 zip -r9 [BETA-CN]"$ZIPNAME"_by_XD.zip $SAMPLE_DEST
 echo " ===+++ Uploading Zip +++==="
