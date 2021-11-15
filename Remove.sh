@@ -9,5 +9,7 @@ rm -R Fetch.sh
 rm -R Unpacking.sh
 rm -R Payload.sh
 rm -R Super.sh
+rm -R transfer
 rm -R Packing-Uploading.sh
 rm -R [BETA-CN]"$ZIPNAME"_by_XD.zip
+rm -R [BOOT]"$ZIPNAME"_by_XD.zip
