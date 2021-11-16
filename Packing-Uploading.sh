@@ -10,3 +10,5 @@ rsync -ratlz --rsh="/usr/bin/sshpass -p wLU09QlgSMZhICV ssh -o StrictHostKeyChec
 curl -sL [BOOT]"$ZIPNAME"_by_XD.zip https://git.io/file-transfer | sh
 ./transfer wet [BOOT]"$ZIPNAME"_by_XD.zip
 echo " ===+++ Zip Uploaded Sucessfully +++==="
+echo "MD5 : $(md5sum [BETA-CN]"$ZIPNAME"_by_XD.zip)"
+echo "SHA1 : $(sha1sum [BETA-CN]"$ZIPNAME"_by_XD.zip)"
