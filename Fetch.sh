@@ -1,4 +1,4 @@
-ZLINK=https://bigota.d.miui.com/21.12.29/miui_STARPRE_21.12.29_afdc3bda63_12.0.zip
+ZLINK=https://bigota.d.miui.com/22.1.4/miui_STARPRE_22.1.4_c2bdf96312_12.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
