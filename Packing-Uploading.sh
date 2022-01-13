@@ -7,9 +7,7 @@ echo " ===+++ Zipping Files +++==="
 zip -r9 [BOOT]"$ZIPNAME"_by_XD.zip $SAMPLE_DEST/images/boot.img
 7z a -t7z [BETA-CN]"$ZIPNAME"_by_XD.7z $SAMPLE_DEST/*
 echo " ===+++ Uploading Zip +++==="
-rsync -ratlz --rsh="/usr/bin/sshpass -p wLU09QlgSMZhICV ssh -o StrictHostKeyChecking=no -l dargons10" [BETA-CN]"$ZIPNAME"_by_XD.7z dargons10@frs.sourceforge.net:/home/pfs/project/xdroms/star
 curl -sL [BOOT]"$ZIPNAME"_by_XD.zip https://git.io/file-transfer | sh
 ./transfer wet [BOOT]"$ZIPNAME"_by_XD.zip
+rsync -ratlz --rsh="/usr/bin/sshpass -p wLU09QlgSMZhICV ssh -o StrictHostKeyChecking=no -l dargons10" [BETA-CN]"$ZIPNAME"_by_XD.7z dargons10@frs.sourceforge.net:/home/pfs/project/xdroms/star
 echo " ===+++ Zip Uploaded Sucessfully +++==="
-echo "MD5 : $(md5sum [BETA-CN]"$ZIPNAME"_by_XD.zip)"
-echo "SHA1 : $(sha1sum [BETA-CN]"$ZIPNAME"_by_XD.zip)"
