@@ -1,4 +1,4 @@
-ZLINK=https://mirrorbot.perunoob1.workers.dev/0:/miui_STARIDGlobal_V13.0.2.0.SKAIDXM_8e7ececfcf_12.0.zip
+ZLINK=https://mirrorbot.perunoob1.workers.dev/0:/miui_STAR_V13.0.10.1.15.DEV_4e228a14e0_12.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
