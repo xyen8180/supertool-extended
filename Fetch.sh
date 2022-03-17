@@ -1,4 +1,4 @@
-ZLINK=https://bigota.d.miui.com/22.3.15/miui_STARPRE_22.3.15_3811f60360_12.0.zip
+ZLINK=https://www.heliosmirror.live/0:/miui_STARPRE_22.3.16_daec77330c_12.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
