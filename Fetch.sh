@@ -1,4 +1,4 @@
-ZLINK=https://superior-mirror.index-cloud.workers.dev/0:/miui_STARPRE_22.4.25_1405405ca8_12.0.zip
+ZLINK=https://superior-mirror.index-cloud.workers.dev/0:/miui_STARPRE_22.4.26_d04aee3631_12.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
