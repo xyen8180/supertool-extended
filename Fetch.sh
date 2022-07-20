@@ -1,4 +1,4 @@
-ZLINK=https://www.mrandom.workers.dev/0:/miui_STARPRE_22.7.13_44db0f5f17_12.0.zip
+ZLINK=https://www.savage69.workers.dev/0:/miui_STARPRE_22.7.18_793868fdbf_12.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
