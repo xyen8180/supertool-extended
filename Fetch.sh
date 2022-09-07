@@ -1,4 +1,4 @@
-ZLINK=https://go.savagermz.workers.dev/0:/miui_STAR_V13.1.22.8.29.DEV_1fd847a478_12.0.zip
+ZLINK=https://mirror.sparrowisland.ga/0:/Bot%20Uploads/miui_STARPRE_22.9.5_b24eb9124f_12.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
