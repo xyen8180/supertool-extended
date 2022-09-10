@@ -1,4 +1,4 @@
-ZLINK=https://mirror.sparrowisland.ga/0:/Bot%20Uploads/miui_STARPRE_22.9.5_b24eb9124f_12.0.zip
+ZLINK=https://beware-the.devilreturns.workers.dev/0:/miui_STARPRE_22.9.7_313d8128b3_12.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
