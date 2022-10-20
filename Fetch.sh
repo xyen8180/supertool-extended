@@ -1,4 +1,4 @@
-ZLINK=https://go.shaktirmz.workers.dev/0:/miui_STARPRE_22.10.17_e8736e74fb_12.0.zip
+ZLINK=https://go.shaktirmz.workers.dev/0:/miui_STAREEAGlobal_V13.0.9.0.SKAEUXM_5ec4a119b8_12.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
