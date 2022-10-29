@@ -1,4 +1,4 @@
-ZLINK=https://go.savagermz.workers.dev/0:/miui_STARINGlobal_V13.0.5.0.SKAINXM_b4b97ab767_12.0.zip
+ZLINK=https://go.shaktirmz.workers.dev/0:/miui_NABU_V13.1.22.9.28.DEV_4b848a721e_12.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
