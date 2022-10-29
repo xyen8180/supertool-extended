@@ -1,4 +1,4 @@
-PreFix=[BETA-CN]
+PreFix=[ROM]
 ZIPNAME="$(ls ./Input | sed -e 's/\.zip$//')"
 SAMPLE_DEST=./Output/$ZIPNAME
 sudo apt-get -y install sshpass
