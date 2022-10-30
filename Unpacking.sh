@@ -1,4 +1,4 @@
-SAMPLE=./Sample/MiUi_STAR_21.10.13_by_XD.zip
+SAMPLE=./Sample/MiUi_STAR_21.10.13_by_XYEN.zip
 ZIPNAME="$(ls ./Input | sed -e 's/\.zip$//')"
 SAMPLE_DEST=./Output/$ZIPNAME
 chmod u+x *
