@@ -11,5 +11,5 @@ rm -R Payload.sh
 rm -R Super.sh
 rm -R transfer
 rm -R Packing-Uploading.sh
-rm -R [BETA-CN]"$ZIPNAME"_by_XYEN.7z
+rm -R [ROM]"$ZIPNAME"_by_XYEN.7z
 rm -R [BOOT]"$ZIPNAME"_by_XYEN.zip
