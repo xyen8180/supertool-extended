@@ -1,38 +1,46 @@
-kind: pipeline
-type: docker
-name: linux-amd64
+# This is a basic workflow to help you get started with Actions
 
-platform:
-  arch: amd64
-  os: linux
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+
 
 steps:
 - name: Start syncing && Compiling
-  image: brock5555/recovery
-  commands:
-  - sh Env.sh
+  run: sh Env.sh
 - name: Source File Download
-  image: brock5555/recovery
-  commands:
-  - sh Fetch.sh
+  run: sh Fetch.sh
 - name: Unpacking Sample and Payload
-  image: brock5555/recovery
-  commands:
-  - sh Unpacking.sh
+  run: sh Unpacking.sh
 - name: Processing Payload
-  image: brock5555/recovery
-  commands:
-  - sh Payload.sh
+  run: sh Payload.sh
 - name: Processing Super.img
-  image: brock5555/recovery
-  commands:
-  - sh Super.sh
+  run: sh Super.sh
 - name: Packing and Uploading
-  image: brock5555/recovery
-  commands:
-  - sh Packing-Uploading.sh
+  run: sh Packing-Uploading.sh
 - name: Removing Orphans
-  image: brock5555/recovery
-  commands:
-  - sh Remove.sh
-  - rm -R Remove.sh
+  run: |
+  sh Remove.sh
+  rm -R Remove.sh
