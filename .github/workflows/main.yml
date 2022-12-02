@@ -1,0 +1,38 @@
+kind: pipeline
+type: docker
+name: linux-amd64
+
+platform:
+  arch: amd64
+  os: linux
+
+steps:
+- name: Start syncing && Compiling
+  image: brock5555/recovery
+  commands:
+  - sh Env.sh
+- name: Source File Download
+  image: brock5555/recovery
+  commands:
+  - sh Fetch.sh
+- name: Unpacking Sample and Payload
+  image: brock5555/recovery
+  commands:
+  - sh Unpacking.sh
+- name: Processing Payload
+  image: brock5555/recovery
+  commands:
+  - sh Payload.sh
+- name: Processing Super.img
+  image: brock5555/recovery
+  commands:
+  - sh Super.sh
+- name: Packing and Uploading
+  image: brock5555/recovery
+  commands:
+  - sh Packing-Uploading.sh
+- name: Removing Orphans
+  image: brock5555/recovery
+  commands:
+  - sh Remove.sh
+  - rm -R Remove.sh
