@@ -41,6 +41,6 @@ steps:
 - name: Packing and Uploading
   run: sh Packing-Uploading.sh
 - name: Removing Orphans
-  run: |
-  sh Remove.sh
-  rm -R Remove.sh
+  run: sh Remove.sh
+- name: remove remove file
+  run: rm -R Remove.sh
