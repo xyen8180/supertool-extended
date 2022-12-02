@@ -25,22 +25,19 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-
-
-steps:
-- name: Start syncing && Compiling
-  run: sh Env.sh
-- name: Source File Download
-  run: sh Fetch.sh
-- name: Unpacking Sample and Payload
-  run: sh Unpacking.sh
-- name: Processing Payload
-  run: sh Payload.sh
-- name: Processing Super.img
-  run: sh Super.sh
-- name: Packing and Uploading
-  run: sh Packing-Uploading.sh
-- name: Removing Orphans
-  run: sh Remove.sh
-- name: remove remove file
-  run: rm -R Remove.sh
+      - name: Start syncing && Compiling
+        run: sh Env.sh
+      - name: Source File Download
+        run: sh Fetch.sh
+      - name: Unpacking Sample and Payload
+        run: sh Unpacking.sh
+      - name: Processing Payload
+        run: sh Payload.sh
+      - name: Processing Super.img
+        run: sh Super.sh
+      - name: Packing and Uploading
+        run: sh Packing-Uploading.sh
+      - name: Removing Orphans
+        run: sh Remove.sh
+      - name: remove remove file
+        run: rm -R Remove.sh
