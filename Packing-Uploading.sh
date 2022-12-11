@@ -2,7 +2,7 @@ PreFix=[ROM]
 ZIPNAME="$(ls ./Input | sed -e 's/\.zip$//')"
 SAMPLE_DEST=./Output/$ZIPNAME
 sudo apt-get -y install sshpass
-sudo apt install p7zip
+sudo apt install p7zip rar
 echo " ===+++ Zipping Files +++==="
 zip -r9 [BOOT]"$ZIPNAME"_by_XYEN.zip $SAMPLE_DEST/images/boot.img
 rar a -v4G ./Output/$ZIPNAME_by_XYEN ./Output/$SAMPLE_DEST/*
