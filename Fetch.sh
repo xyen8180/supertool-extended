@@ -1,4 +1,4 @@
-ZLINK=https://go.savagermz.workers.dev/0:/miui_STARIDGlobal_V13.0.5.0.SKAIDXM_9fbd1f6c02_12.0.zip
+ZLINK=https://premium.sparrowisland.cf/1:/miui_STAR_V14.0.22.12.5.DEV_7c031b702e_13.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
