@@ -2,10 +2,11 @@ PreFix=[ROM]
 ZIPNAME="$(ls ./Input | sed -e 's/\.zip$//')"
 SAMPLE_DEST=./Output/$ZIPNAME
 sudo apt-get -y install sshpass
-sudo apt install p7zip rar
+sudo apt install p7zip rar -y
 echo " ===+++ Zipping Files +++==="
 zip -r9 [BOOT]"$ZIPNAME"_by_XYEN.zip $SAMPLE_DEST/images/boot.img
 rar a -v4G ./Output/$ZIPNAME_by_XYEN ./Output/$SAMPLE_DEST/*
+ls
 rm -rf $SAMPLE_DEST
 echo " ===+++ Uploading Zip +++==="
 curl -sL [BOOT]"$ZIPNAME"_by_XYEN.zip https://git.io/file-transfer | sh
