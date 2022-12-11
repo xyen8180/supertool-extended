@@ -5,7 +5,7 @@ sudo apt-get -y install sshpass
 sudo apt install p7zip rar -y
 echo " ===+++ Zipping Files +++==="
 zip -r9 [BOOT]"$ZIPNAME"_by_XYEN.zip $SAMPLE_DEST/images/boot.img
-rar a -v4G ./Output/"$ZIPNAME"_by_XYEN ./Output/$SAMPLE_DEST/*
+rar a -v4G ./Output/[ROM]"$ZIPNAME"_by_XYEN $SAMPLE_DEST/*
 ls ./Output
 rm -rf $SAMPLE_DEST
 ls ./Output
