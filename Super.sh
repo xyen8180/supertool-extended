@@ -16,7 +16,7 @@ SE=$(stat -c %s $SAMPLE_DEST/images/system_ext.img)
 echo "SYSTEM_EXT=$SE"
 VE=$(stat -c %s $SAMPLE_DEST/images/vendor.img)
 echo "VENDOR=$VE"
-SUM=`expr $OD + $PR + $SY + $SE + $VE`
+SUM=`expr $OD + $PR + $SY + $SE + $VE + $MI_EXT`
 echo "All=$SUM"
 echo " ===+++ Building SuperImage Please Wait +++==="
 ./Binaries/lpmake --device-size 9126805504 --metadata-size 65536 --metadata-slots 3 --super-name super  --group qti_dynamic_partitions:$SUM --partition mi_ext_a:readonly:$MI_EXT:qti_dynamic_partitions --partition mi_ext_b:readonly:0:qti_dynamic_partitions --partition system_a:readonly:$SY:qti_dynamic_partitions --partition system_b:readonly:0:qti_dynamic_partitions --partition system_ext_a:readonly:$SE:qti_dynamic_partitions --partition system_ext_b:readonly:0:qti_dynamic_partitions --partition vendor_a:readonly:$VE:qti_dynamic_partitions --partition vendor_b:readonly:0:qti_dynamic_partitions --partition product_a:readonly:$PR:qti_dynamic_partitions --partition product_b:readonly:0:qti_dynamic_partitions --partition odm_a:readonly:$OD:qti_dynamic_partitions --partition odm_b:readonly:0:qti_dynamic_partitions --image mi_ext_a=$SAMPLE_DEST/images/mi_ext.img --image system_a=$SAMPLE_DEST/images/system.img --image system_ext_a=$SAMPLE_DEST/images/system_ext.img --image vendor_a=$SAMPLE_DEST/images/vendor.img --image product_a=$SAMPLE_DEST/images/product.img --image odm_a=$SAMPLE_DEST/images/odm.img --virtual-ab --sparse --output $SAMPLE_DEST/images/super.img
