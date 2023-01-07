@@ -34,7 +34,7 @@ VE=$(stat -c %s $PAYLOAD_OUTPUT/vendor.img)
 echo "VENDOR=$VE"
 VD=$(stat -c %s $PAYLOAD_OUTPUT/vendor_dlkm.img)
 echo "VENDOR_DLKM=$VD"
-SUM=`expr $OD + $PR + $SY + $SE + $VE + $MI_EXT`
+SUM=`expr $OD + $PR + $SY + $SE + $VE + $VD + $MI_EXT`
 echo "All=$SUM"
 echo "Building super image please wait..."
 ./Binaries/lpmake \
