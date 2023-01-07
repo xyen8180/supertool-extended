@@ -70,6 +70,7 @@ echo "Building super image please wait..."
 --image=system_b=$PAYLOAD_OUTPUT/system_b.img \
 --image=system_ext_b=$PAYLOAD_OUTPUT/system_ext_b.img \
 --image=vendor_b=$PAYLOAD_OUTPUT/vendor_b.img \
+--image=vendor_dlkm_b=$PAYLOAD_OUTPUT/vendor_dlkm_b.img \
 --sparse \
 --virtual-ab \
 --output $PAYLOAD_OUTPUT/super.img
@@ -87,4 +88,5 @@ $PAYLOAD_OUTPUT/odm_b.img \
 $PAYLOAD_OUTPUT/product_b.img \
 $PAYLOAD_OUTPUT/system_b.img \
 $PAYLOAD_OUTPUT/system_ext_b.img \
-$PAYLOAD_OUTPUT/vendor_b.img
+$PAYLOAD_OUTPUT/vendor_b.img \
+$PAYLOAD_OUTPUT/vendor_dlkm_b.img
