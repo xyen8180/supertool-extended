@@ -64,13 +64,6 @@ echo "Building super image please wait..."
 --partition=system_ext_b:readonly:0:qti_dynamic_partitions_b \
 --partition=vendor_b:readonly:0:qti_dynamic_partitions_b \
 --partition=vendor_dlkm_b:readonly:0:qti_dynamic_partitions_b \
---image=mi_ext_b=$PAYLOAD_OUTPUT/mi_ext_b.img \
---image=odm_b=$PAYLOAD_OUTPUT/odm_b.img \
---image=product_b=$PAYLOAD_OUTPUT/product_b.img \
---image=system_b=$PAYLOAD_OUTPUT/system_b.img \
---image=system_ext_b=$PAYLOAD_OUTPUT/system_ext_b.img \
---image=vendor_b=$PAYLOAD_OUTPUT/vendor_b.img \
---image=vendor_dlkm_b=$PAYLOAD_OUTPUT/vendor_dlkm_b.img \
 --sparse \
 --virtual-ab \
 --output $PAYLOAD_OUTPUT/super.img
@@ -89,4 +82,4 @@ $PAYLOAD_OUTPUT/product_b.img \
 $PAYLOAD_OUTPUT/system_b.img \
 $PAYLOAD_OUTPUT/system_ext_b.img \
 $PAYLOAD_OUTPUT/vendor_b.img \
-$PAYLOAD_OUTPUT/vendor_dlkm_b.img
+
