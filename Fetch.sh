@@ -1,4 +1,4 @@
-ZLINK=https://premium.sparrowisland.cf/1:/miui_STAR_V14.0.23.1.2.DEV_b2fb3d6283_13.0.zip
+ZLINK=https://hugeota.d.miui.com/V14.0.23.1.9.DEV/miui_STAR_V14.0.23.1.9.DEV_5a90e23a6f_13.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
