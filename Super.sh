@@ -34,9 +34,7 @@ VE=$(stat -c %s $PAYLOAD_OUTPUT/vendor.img)
 echo "VENDOR=$VE"
 VD=$(stat -c %s $PAYLOAD_OUTPUT/vendor_dlkm.img)
 echo "VENDOR_DLKM=$VD"
-VB=$(stat -c %s $PAYLOAD_OUTPUT/vendor_boot.img)
-echo "VENDOR_BOOT=$VB"
-SUM=`expr $OD + $PR + $SY + $SE + $VE + $VD + $MI_EXT + $VB`
+SUM=`expr $OD + $PR + $SY + $SE + $VE + $VD + $MI_EXT`
 echo "All=$SUM"
 echo "Building super image please wait..."
 ./Binaries/lpmake \
@@ -51,7 +49,6 @@ echo "Building super image please wait..."
 --partition=system_ext_a:readonly:$SE:qti_dynamic_partitions_a \
 --partition=vendor_a:readonly:$VE:qti_dynamic_partitions_a \
 --partition=vendor_dlkm_a:readonly:$VD:qti_dynamic_partitions_a \
---partition=vendor_boot_a:readonly:$VB:qti_dynamic_partitions_a \
 --image=mi_ext_a=$PAYLOAD_OUTPUT/mi_ext.img \
 --image=odm_a=$PAYLOAD_OUTPUT/odm.img \
 --image=product_a=$PAYLOAD_OUTPUT/product.img \
@@ -59,7 +56,6 @@ echo "Building super image please wait..."
 --image=system_ext_a=$PAYLOAD_OUTPUT/system_ext.img \
 --image=vendor_a=$PAYLOAD_OUTPUT/vendor.img \
 --image=vendor_dlkm_a=$PAYLOAD_OUTPUT/vendor_dlkm.img \
---image=vendor_boot_a=$PAYLOAD_OUTPUT/vendor_boot.img \
 --group=qti_dynamic_partitions_b:$SUM \
 --partition=mi_ext_b:readonly:0:qti_dynamic_partitions_b \
 --partition=odm_b:readonly:0:qti_dynamic_partitions_b \
@@ -67,7 +63,6 @@ echo "Building super image please wait..."
 --partition=system_b:readonly:0:qti_dynamic_partitions_b \
 --partition=system_ext_b:readonly:0:qti_dynamic_partitions_b \
 --partition=vendor_b:readonly:0:qti_dynamic_partitions_b \
---partition=vendor_boot_b:readonly:0:qti_dynamic_partitions_b \
 --partition=vendor_dlkm_b:readonly:0:qti_dynamic_partitions_b \
 --sparse \
 --virtual-ab \
