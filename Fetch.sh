@@ -1,4 +1,4 @@
-ZLINK=https://hugeota.d.miui.com/V14.0.23.2.7.DEV/miui_STAR_V14.0.23.2.7.DEV_c8a0b17a15_13.0.zip
+ZLINK=https://bigota.d.miui.com/V14.0.1.0.TKAMIXM/miui_STARGlobal_V14.0.1.0.TKAMIXM_f8a19b0595_13.0.zip
 mkdir Input && mkdir Output
 cd Input
 echo " ===+++ Source Zip Downloading +++==="
