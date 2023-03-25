@@ -12,5 +12,5 @@ ls ./Output
 echo " ===+++ Uploading Zip +++==="
 curl -sL [BOOT]"$ZIPNAME"_by_XYEN.zip https://git.io/file-transfer | sh
 ./transfer wet [BOOT]"$ZIPNAME"_by_XYEN.zip
-rsync -ratlz --rsh="/usr/bin/sshpass -p Sourceforge*8180 ssh -o StrictHostKeyChecking=no -l xyen8180" ./Output/* xyen8180@frs.sourceforge.net:/home/frs/project/xyen-roms/star
+rsync -ratlz --rsh="/usr/bin/sshpass -p Sourceforge*8180 ssh -o StrictHostKeyChecking=no -l xyen8180" ./Output/* xyen8180@frs.sourceforge.net:/home/frs/project/xyen-roms/nuwa
 echo " ===+++ Zip Uploaded Sucessfully +++==="
